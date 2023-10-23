@@ -35,4 +35,30 @@ body nav ul li a {
 body nav ul li a:hover {
   background: #F6E7D8;
   color: #874356;
+}
+body main .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+body main .container ul li {
+  width: 30%;
+  list-style: none;
+  height: 80vh;
+  overflow: hidden;
+  border-radius: 1px;
+}
+body main .container ul li img {
+  max-width: 100%;
+  min-height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: bottom;
+  transition: transform ease 0.5s;
+}
+body main .container ul li img:hover {
+  background-color: #F6E7D8;
+  opacity: 0.5;
+  transform: scale(1.05);
 }/*# sourceMappingURL=index.css.map */

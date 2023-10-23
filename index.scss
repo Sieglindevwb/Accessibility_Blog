@@ -53,5 +53,47 @@ body {
         }
 
     }
+
+    main {
+
+        
+        .container {
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding-top: 20px;
+                
+
+                li {
+                    width: 30%;
+                    list-style: none;
+                    height: 80vh;
+                    overflow: hidden; 
+                    border-radius: 1px;
+                   
+                    
+                
+                    img {
+                        max-width: 100%;
+                        min-height: 100%;
+                        object-fit: cover;
+                        vertical-align: bottom;
+                        transition: transform ease .5s;
+                        
+                        }
+                    
+                    img:hover {
+                        background-color: $backgroundcolor;
+                        opacity: 0.50;
+                        transform: scale(1.05);
+                    }
+                   
+
+                }
+            }   
+        }
+    }
 }
 
