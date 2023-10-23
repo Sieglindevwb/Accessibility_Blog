@@ -19,28 +19,29 @@ body {
     }
 
     nav {
-
+        margin: 0;
+        background-color: $darkred;
+        
 
         ul {
+            margin: 0;
+            padding: 0;
             list-style-type: none;
             overflow: hidden;
-            position: fixed;
-            width: 100%;
-            margin: 0;
-            background-color: $darkred;
+            
             
 
             li {
                 display: inline;
+                float: left;
                 
                 a {
-                    float: left;
                     display: block;
                     color: $whitecolor;
                     text-align: center;
                     padding: 14px 16px;
                     text-decoration: none;
-                    font-size: 17px;
+                    font-size: 20px;
                 }
                 
                 a:hover {
