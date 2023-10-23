@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  color: #874356;
+  background-color: #F6E7D8;
+  font-family: "Roboto", sans-serif;
+}
+body header {
+  padding: 60px;
+  text-align: center;
+  background: #874356;
+  color: white;
+}
+body nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  margin: 0;
+  background-color: #874356;
+}
+body nav ul li {
+  display: inline;
+}
+body nav ul li a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+body nav ul li a:hover {
+  background: #F6E7D8;
+  color: #874356;
+}/*# sourceMappingURL=index.css.map */
