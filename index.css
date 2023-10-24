@@ -72,4 +72,29 @@ body main .container ul li img:hover {
   background-color: #F6E7D8;
   opacity: 0.5;
   transform: scale(1.05);
+}
+body main .new-blog {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  margin-top: 120px;
+}
+body main .new-blog img {
+  max-width: 50%;
+  height: 80vh;
+}
+body main .new-blog .new-blog-text {
+  padding: 300px;
+  align-items: center;
+  color: #874356;
+}
+body main .new-blog .new-blog-text h1 {
+  font-size: 50px;
+}
+body main .new-blog .new-blog-text h2 {
+  text-align: center;
+  font-size: 60px;
+}
+body main .new-blog .new-blog-text p {
+  font-size: 40px;
 }/*# sourceMappingURL=index.css.map */
