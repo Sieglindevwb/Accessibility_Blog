@@ -5,6 +5,9 @@ $bodyfont: 'Roboto', sans-serif;
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     color: $darkred;
     background-color: $backgroundcolor;
@@ -15,21 +18,25 @@ body {
         text-align: center;
         background: $darkred;
         color: $whitecolor;
+        flex: 0 0 auto;
        
     }
 
     nav {
-        margin: 0;
+        margin: auto;
         background-color: $darkred;
+        width: 100%;
+        flex: 0 0 auto;
+        display: flex;
+        justify-content: center;
         
 
         ul {
+            
             margin: 0;
             padding: 0;
             list-style-type: none;
             overflow: hidden;
-            
-            
 
             li {
                 display: inline;
@@ -56,6 +63,8 @@ body {
 
     main {
 
+        flex: 1 0 auto;
+
         
         .container {
 
@@ -65,6 +74,7 @@ body {
                 justify-content: space-around;
                 padding-top: 20px;
                 
+                
 
                 li {
                     width: 30%;
@@ -73,7 +83,6 @@ body {
                     overflow: hidden; 
                     border-radius: 1px;
                    
-                    
                 
                     img {
                         max-width: 100%;
@@ -81,13 +90,12 @@ body {
                         object-fit: cover;
                         vertical-align: bottom;
                         transition: transform ease .5s;
-                        
                         }
                     
                     img:hover {
                         background-color: $backgroundcolor;
                         opacity: 0.50;
-                        transform: scale(1.05);
+                        transform: scale(1.05); 
                     }
                    
 
