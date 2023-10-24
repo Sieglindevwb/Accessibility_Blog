@@ -3,6 +3,23 @@ $whitecolor: white;
 $backgroundcolor: #F6E7D8;
 $bodyfont: 'Roboto', sans-serif;
 
+%container-shared {
+    margin-bottom: 300px;
+    margin-top: 200px;
+}
+
+%ul-shared {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+%li-shared {
+    list-style: none;
+    overflow: hidden; 
+    border-radius: 1px;
+}
 
 body {
     display: flex;
@@ -144,21 +161,58 @@ body {
                 button {
                     color: $whitecolor;
                     background-color: $darkred;
-                    margin-top: 2rem;
+                    margin-top: 1rem;
                     padding: 1.5rem 3rem;
                     font-size: 2rem;
                     border-radius: 2rem;
                     border: none;
+                    border: 0.2rem solid transparent;
                 }
 
                 button:hover {
                     color: $darkred;
-                    border: 0.2rem solid $darkred;
+                    border-color: $darkred;
                     background-color: $whitecolor;
-                    transition: background-color 0.3s;
+                    transition: background-color 0.3s, border-color 0.3s;
+                }
+
+            }
+        }
+
+        .more-about-blog {
+            @extend %container-shared;
+
+            .image-icons {
+                @extend %ul-shared;
+
+                li {
+                   @extend %li-shared;
+                   width: 200px;
+                   height: 200px;
+
+                    img {
+                        max-width: 100%;
+                        min-height: 100%;
+                        transition: transform ease .5s;
+                        }
                 }
             }
 
+            .text-icons {
+                
+                @extend %ul-shared;
+                margin-left: 50px;
+                margin-right: 50px;
+                
+                li {
+                    @extend %li-shared;
+
+                    h2 {
+                        font-size: 3rem;
+                        text-align: center;
+                    }
+                }
+            }
         }
     }
 }

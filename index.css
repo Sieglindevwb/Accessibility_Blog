@@ -1,3 +1,21 @@
+body main .more-about-blog {
+  margin-bottom: 300px;
+  margin-top: 200px;
+}
+
+body main .more-about-blog .text-icons, body main .more-about-blog .image-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+body main .more-about-blog .text-icons li, body main .more-about-blog .image-icons li {
+  list-style: none;
+  overflow: hidden;
+  border-radius: 1px;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -111,15 +129,33 @@ body main .new-blog .new-blog-text p {
 body main .new-blog .new-blog-text button {
   color: white;
   background-color: #874356;
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 1.5rem 3rem;
   font-size: 2rem;
   border-radius: 2rem;
   border: none;
+  border: 0.2rem solid transparent;
 }
 body main .new-blog .new-blog-text button:hover {
   color: #874356;
-  border: 0.2rem solid #874356;
+  border-color: #874356;
   background-color: white;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+body main .more-about-blog .image-icons li {
+  width: 200px;
+  height: 200px;
+}
+body main .more-about-blog .image-icons li img {
+  max-width: 100%;
+  min-height: 100%;
+  transition: transform ease 0.5s;
+}
+body main .more-about-blog .text-icons {
+  margin-left: 50px;
+  margin-right: 50px;
+}
+body main .more-about-blog .text-icons li h2 {
+  font-size: 3rem;
+  text-align: center;
 }/*# sourceMappingURL=index.css.map */
