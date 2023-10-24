@@ -1,6 +1,6 @@
 body main .more-about-blog {
-  margin-bottom: 300px;
-  margin-top: 200px;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 
 body main .more-about-blog .text-icons, body main .more-about-blog .image-icons {
@@ -16,6 +16,23 @@ body main .more-about-blog .text-icons li, body main .more-about-blog .image-ico
   border-radius: 1px;
 }
 
+body main .walking-route .text-walking-route button {
+  color: white;
+  background-color: #874356;
+  margin-top: 1rem;
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  border-radius: 2rem;
+  border: none;
+  border: 0.2rem solid transparent;
+}
+
+body main .walking-route .text-walking-route button:hover {
+  color: #874356;
+  border-color: #874356;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
 body footer .footer_list_socials {
   list-style: none;
   padding: 0;
@@ -23,6 +40,7 @@ body footer .footer_list_socials {
   font-size: 20px;
 }
 
+/*body*/
 body {
   display: flex;
   flex-direction: column;
@@ -31,6 +49,9 @@ body {
   color: #874356;
   background-color: #F6E7D8;
   font-family: "Roboto", sans-serif;
+  /*header*/
+  /*navigation*/
+  /*main*/
 }
 body header {
   padding: 60px;
@@ -72,9 +93,9 @@ body nav ul li a:hover {
 body main {
   flex: 1 0 auto;
   margin-bottom: 100px;
-}
-body main .container {
-  margin-bottom: 300px;
+  /*big pictures*/
+  /*icons with titles*/
+  /*new blog announcement*/
 }
 body main .container ul {
   display: flex;
@@ -102,6 +123,9 @@ body main .container ul li img:hover {
   opacity: 0.5;
   transform: scale(1.05);
 }
+body main .more-about-blog {
+  margin: 300px;
+}
 body main .more-about-blog .image-icons li {
   width: 200px;
   height: 200px;
@@ -119,19 +143,18 @@ body main .more-about-blog .text-icons li h2 {
   font-size: 3rem;
   text-align: center;
 }
-body .new-blog {
+body main .new-blog {
   display: flex;
   flex-direction: row;
   background-color: white;
-  margin-top: 120px;
   height: 30%;
   justify-content: center;
   align-items: center;
 }
-body .new-blog img {
+body main .new-blog img {
   max-width: 50%;
 }
-body .new-blog .new-blog-text {
+body main .new-blog .new-blog-text {
   padding: 3rem;
   padding-left: 5rem;
   padding-top: 7rem;
@@ -139,18 +162,18 @@ body .new-blog .new-blog-text {
   max-width: 80%;
   max-height: 100%;
 }
-body .new-blog .new-blog-text h1 {
+body main .new-blog .new-blog-text h1 {
   font-size: 2rem;
 }
-body .new-blog .new-blog-text h2 {
+body main .new-blog .new-blog-text h2 {
   text-align: center;
   font-size: 3rem;
 }
-body .new-blog .new-blog-text p {
+body main .new-blog .new-blog-text p {
   font-size: 2rem;
   line-height: 1.5em;
 }
-body .new-blog .new-blog-text button {
+body main .new-blog .new-blog-text button {
   color: white;
   background-color: #874356;
   margin-top: 1rem;
@@ -160,11 +183,47 @@ body .new-blog .new-blog-text button {
   border: none;
   border: 0.2rem solid transparent;
 }
-body .new-blog .new-blog-text button:hover {
+body main .new-blog .new-blog-text button:hover {
   color: #874356;
   border-color: #874356;
   background-color: white;
   transition: background-color 0.3s, border-color 0.3s;
+}
+body main .walking-route {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 100px;
+  justify-content: center;
+  align-items: center;
+}
+body main .walking-route img {
+  width: 60%;
+  max-width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body main .walking-route .text-walking-route {
+  padding: 3rem;
+  padding-left: 5rem;
+  padding-top: 7rem;
+  color: #874356;
+}
+body main .walking-route .text-walking-route h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+body main .walking-route .text-walking-route h2 {
+  font-size: 2rem;
+}
+body main .walking-route .text-walking-route p {
+  font-size: 2rem;
+  line-height: 1.5em;
+}
+body main .walking-route .text-walking-route button:hover {
+  background-color: #F6E7D8;
 }
 body footer {
   display: flex;
