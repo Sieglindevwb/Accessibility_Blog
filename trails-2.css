@@ -265,82 +265,42 @@ body footer .footer_title_socials {
   text-align: center;
 }
 
-body main .trail-1 {
+body main article {
   display: flex;
   flex-direction: row;
-  width: 60vw;
-  min-height: 40vh;
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  max-width: 60%;
+  min-height: 20%;
   margin: 0 auto;
-  margin-top: 100px;
   border: 2px solid #874356;
   border-radius: 10px;
-  background-color: white;
+  margin-top: 20px;
 }
-body main .trail-1 img {
-  max-width: 100%;
+body main article img {
+  max-width: 50%;
   height: auto;
   border-radius: 10px 0px 0px 10px;
 }
-body main .trail-1 .trail-1-extra-info {
-  display: flex;
-  flex-direction: column;
+body main article .trail-1-extra-info {
+  padding: 20px;
 }
-body main .trail-1 .trail-1-extra-info .trail-1-info li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-body main .trail-1 .trail-1-extra-info .trail-1-items {
-  display: flex;
-  flex-direction: row;
-}
-body main .trail-1 .trail-1-extra-info .trail-1-items li {
-  margin: 0;
-  padding: 5px;
-  list-style-type: none;
+body main article .trail-1-extra-info .bottom-border {
+  border-bottom: 1px solid #874356;
+  padding-bottom: 20px;
 }
 
-@media (max-width: 768px) {
-  body main .trail-1 {
-    margin-top: 50px;
+@media screen and (max-width: 768px) {
+  body main article {
+    max-width: 80%;
+    min-height: 20%;
     flex-direction: column;
-    width: 90vw;
-    min-height: 40vh;
-    margin: 0 auto;
   }
-  body main .trail-1 img {
+  body main article img {
     max-width: 100%;
-    max-height: auto;
-    min-width: 100%;
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0px 0px;
   }
-  body main .trail-1 .trail-1-extra-info {
-    flex-direction: column;
-    max-width: 100%;
-  }
-  body main .trail-1 .trail-1-extra-info .trail-1-items {
-    flex-direction: row;
-    max-width: 100%;
-  }
-}
-@media (max-width: 768px) and (max-width: 480px) {
-  body main .trail-1 {
-    margin-top: 50px;
-    flex-direction: column;
-    width: 90vw;
-    min-height: 40vh;
-    margin: 0 auto;
-  }
-  body main .trail-1 img {
-    max-width: 100%;
-    max-height: auto;
-    min-width: 100%;
-  }
-  body main .trail-1 .trail-1-extra-info {
-    flex-direction: column;
-    max-width: 100%;
-  }
-  body main .trail-1 .trail-1-extra-info .trail-1-items {
-    flex-direction: row;
-    max-width: 100%;
-  }
-}/*# sourceMappingURL=trails.css.map */
+}/*# sourceMappingURL=trails-2.css.map */
