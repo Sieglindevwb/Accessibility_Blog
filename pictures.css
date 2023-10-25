@@ -328,7 +328,8 @@ body main ul li img {
   vertical-align: bottom;
 }
 body main ul li h2 {
-  padding: 120px;
+  max-width: 100%;
+  padding: 50px;
   text-align: center;
   justify-content: center;
   font-size: 50px;
@@ -336,4 +337,20 @@ body main ul li h2 {
 }
 body main ul li:last-child {
   flex-grow: 10;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  body main ul {
+    margin: 0;
+    margin-top: 10px;
+  }
+  body main ul li {
+    height: 30vh;
+  }
+  body main ul li h2 {
+    max-width: 100%;
+    padding: 50px;
+    text-align: center;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=pictures.css.map */
