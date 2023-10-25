@@ -277,7 +277,7 @@ body main .trail-1 {
   background-color: white;
 }
 body main .trail-1 img {
-  max-width: 60%;
+  max-width: 100%;
   height: auto;
   border-radius: 10px 0px 0px 10px;
 }
@@ -302,10 +302,10 @@ body main .trail-1 .trail-1-extra-info .trail-1-items li {
 
 @media (max-aspect-ratio: 1/1) {
   body main .trail-1 {
-    flex-wrap: wrap;
+    flex-direction: column;
     width: 90vw;
     min-height: 40vh;
-    margin: 0;
+    margin: 0 auto;
   }
   body main .trail-1 img {
     max-width: 100%;
@@ -313,9 +313,11 @@ body main .trail-1 .trail-1-extra-info .trail-1-items li {
     min-width: 100%;
   }
   body main .trail-1 .trail-1-extra-info {
+    flex-direction: column;
     max-width: 100%;
   }
   body main .trail-1 .trail-1-extra-info .trail-1-items {
+    flex-direction: row;
     max-width: 100%;
   }
 }
