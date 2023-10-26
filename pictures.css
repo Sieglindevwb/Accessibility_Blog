@@ -524,6 +524,11 @@ body main ul li img {
   vertical-align: bottom;
 }
 body main ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
   text-decoration: none;
 }
 body main ul li a h2 {
