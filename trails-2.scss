@@ -1,6 +1,13 @@
 @use './index.scss';
 
 body {
+    header {
+        @extend %header-shared;
+    }
+
+    nav {
+        @extend %navbar-shared;
+    }
     main {
         article {
             display: flex; 
@@ -32,6 +39,9 @@ body {
             }
             
         }
+    }
+    footer {
+        @extend %footer-shared;
     }
 }
 

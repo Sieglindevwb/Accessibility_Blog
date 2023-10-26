@@ -7,10 +7,12 @@ body header {
 }
 
 body nav {
+  margin: auto;
   background-color: #874356;
   width: 100%;
   flex: 0 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 body nav ul {
@@ -36,19 +38,51 @@ body nav ul li a:hover {
   color: #874356;
 }
 
+body footer {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background: #874356;
+  color: white;
+}
+body footer .footer_title {
+  font-size: 30px;
+}
+body footer .footer_list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  text-align: center;
+}
+body footer .footer_list li {
+  padding-bottom: 5px;
+}
+body footer .footer_list li a {
+  text-decoration: none;
+  color: white;
+}
+body footer .footer_list_socials {
+  display: flex;
+}
+body footer .footer_list_socials li {
+  padding: 20px;
+  flex-direction: row;
+}
+body footer .footer_list_socials li img {
+  width: 50px;
+  height: 50px;
+}
+body footer .footer_title_socials {
+  font-size: 30px;
+  text-align: center;
+}
+
 body main .more-about-blog {
-  margin-bottom: 100px;
   margin-top: 100px;
 }
 
-body main .more-about-blog .text-icons, body main .more-about-blog .image-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 20px;
-}
-
-body main .more-about-blog .text-icons li, body main .more-about-blog .image-icons li {
+body main .more-about-blog .image-icons li {
   list-style: none;
   overflow: hidden;
   border-radius: 1px;
@@ -71,7 +105,7 @@ body main .walking-route .text-walking-route button:hover {
   transition: background-color 0.3s, border-color 0.3s;
 }
 
-body footer .footer_list_socials {
+body footer .footer_list_socials, body footer .footer_list_socials {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -104,6 +138,7 @@ body nav {
   width: 100%;
   flex: 0 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: center;
 }
 body nav ul {
@@ -163,28 +198,39 @@ body main .container ul li img:hover {
   opacity: 0.5;
   transform: scale(1.05);
 }
+body main .more-about-blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 body main .more-about-blog .image-icons {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  align-items: center;
+  max-width: 20vw;
+  min-height: auto;
 }
-body main .more-about-blog .image-icons li {
-  width: 200px;
-  height: 200px;
-}
-body main .more-about-blog .image-icons li img {
-  max-width: 100%;
-  min-height: 100%;
+body main .more-about-blog .image-icons img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  min-height: 60%;
+  width: auto;
+  height: auto;
   transition: transform ease 0.5s;
 }
-body main .more-about-blog .text-icons {
-  margin: 0;
+body main .more-about-blog .image-icons .text-icons {
+  margin-top: 10;
+  text-align: center;
   padding: 0;
   margin-left: 50px;
   margin-right: 50px;
 }
-body main .more-about-blog .text-icons li h2 {
-  font-size: 3rem;
-  text-align: center;
+body main .more-about-blog .image-icons .text-icons h2 {
+  font-size: 1.7rem;
 }
 body main .new-blog {
   display: flex;
@@ -311,16 +357,126 @@ body footer .footer_title_socials {
   text-align: center;
 }
 
-@media screen and (max-width: 768px) {
-  body main section .container ul {
-    max-width: 80%;
-    min-height: 20%;
+@media only screen and (max-width: 768px) {
+  body main .container {
+    display: none;
+  }
+  body main .more-about-blog {
     flex-direction: column;
   }
-  body main section .container ul img {
+  body main .more-about-blog .image-icons {
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    max-width: 50vw;
+    min-height: auto;
+  }
+  body main .more-about-blog .image-icons .text-icons h2 {
+    font-size: 1.1rem;
+  }
+  body main .new-blog {
+    flex-direction: column;
+  }
+  body main .new-blog img {
+    max-width: 100%;
+  }
+  body main .new-blog .new-blog-text {
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+  }
+  body main .new-blog .new-blog-text h1 {
+    font-size: 1.7rem;
+  }
+  body main .new-blog .new-blog-text h2 {
+    font-size: 2rem;
+  }
+  body main .new-blog .new-blog-text p {
+    font-size: 1.2rem;
+    line-height: 1.5em;
+  }
+  body main .new-blog .new-blog-text button {
+    font-size: 1.5rem;
+  }
+  body main .new-blog .new-blog-text button:hover {
+    display: none;
+  }
+  body main .walking-route {
+    flex-direction: column;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+  body main .walking-route img {
     max-width: 100%;
     width: 100%;
-    height: auto;
+  }
+  body main .walking-route .text-walking-route {
+    padding-right: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  body main .walking-route .text-walking-route h1 {
+    font-size: 2rem;
+  }
+  body main .walking-route .text-walking-route h2 {
+    font-size: 1.5rem;
+  }
+  body main .walking-route .text-walking-route p {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5em;
+  }
+  body main .walking-route .text-walking-route button {
+    font-size: 1.5rem;
+  }
+  body main .walking-route .text-walking-route button:hover {
+    display: none;
+  }
+  body footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px;
+    background: #874356;
+    color: white;
+  }
+  body footer .footer_title {
+    font-size: 30px;
+    text-align: center;
+  }
+  body footer .footer_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+  }
+  body footer .footer_list li {
+    padding-bottom: 5px;
+  }
+  body footer .footer_list li a {
+    text-decoration: none;
+    color: white;
+  }
+  body footer .footer_list_socials {
+    display: flex;
+    justify-content: center;
+  }
+  body footer .footer_list_socials li {
+    padding: 20px;
+    flex-direction: row;
+  }
+  body footer .footer_list_socials li img {
+    width: 50px;
+    height: 50px;
+  }
+  body footer .footer_title_socials {
+    font-size: 30px;
+    text-align: center;
   }
 }
 body {
@@ -358,7 +514,6 @@ body main ul li h2 {
 body main ul li:last-child {
   flex-grow: 10;
 }
-
 @media (max-aspect-ratio: 1/1) {
   body main ul {
     margin: 0;

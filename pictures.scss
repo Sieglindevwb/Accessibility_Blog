@@ -49,6 +49,9 @@ body {
             }
         }
     }
+    footer {
+        @extend %footer-shared;
+    }
 }
 
 @media (max-aspect-ratio: 1/1) {
