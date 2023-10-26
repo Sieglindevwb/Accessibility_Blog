@@ -195,11 +195,18 @@ body main .new-blog .new-blog-text button {
   border: none;
   border: 0.2rem solid transparent;
 }
+body main .new-blog .new-blog-text button a {
+  text-decoration: none;
+  color: white;
+}
 body main .new-blog .new-blog-text button:hover {
   color: #874356;
   border-color: #874356;
   background-color: white;
   transition: background-color 0.3s, border-color 0.3s;
+}
+body main .new-blog .new-blog-text button:hover a {
+  color: #874356;
 }
 body main .walking-route {
   display: flex;

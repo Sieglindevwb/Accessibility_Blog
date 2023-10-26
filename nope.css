@@ -1,0 +1,32 @@
+body {
+  margin: 10vw;
+  height: 50vh;
+  position: relative;
+  background-color: #874356;
+}
+body header {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+body header h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 5rem;
+}
+body header a {
+  text-decoration: none;
+}
+body header a p {
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  color: white;
+  font-size: 1.5rem;
+  padding: 20px;
+}
+body header a:hover p {
+  background-color: white;
+  color: #874356;
+}/*# sourceMappingURL=nope.css.map */
