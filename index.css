@@ -161,16 +161,16 @@ body main .new-blog {
   max-width: 100%;
   min-height: auto;
   justify-content: center;
-  align-items: center;
 }
 body main .new-blog img {
-  max-width: 50%;
-  width: 100%;
+  max-width: 100%;
+  width: 50%;
   height: auto;
 }
 body main .new-blog .new-blog-text {
   padding-left: 3rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
   color: #874356;
   max-width: 80%;
   max-height: 100%;
@@ -223,7 +223,7 @@ body main .walking-route {
 body main .walking-route img {
   max-width: 100%;
   width: 40%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -312,9 +312,11 @@ body footer .footer_title_socials {
   }
   body main .new-blog {
     flex-direction: column;
+    align-items: center;
   }
   body main .new-blog img {
     max-width: 100%;
+    width: 100%;
   }
   body main .new-blog .new-blog-text {
     text-align: center;
@@ -346,6 +348,7 @@ body footer .footer_title_socials {
   body main .walking-route img {
     max-width: 100%;
     width: 100%;
+    height: auto;
   }
   body main .walking-route .text-walking-route {
     padding-right: 0;
@@ -366,9 +369,6 @@ body footer .footer_title_socials {
   }
   body main .walking-route .text-walking-route button {
     font-size: 1.5rem;
-  }
-  body main .walking-route .text-walking-route button:hover {
-    display: none;
   }
   body footer {
     display: flex;

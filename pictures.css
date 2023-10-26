@@ -123,6 +123,7 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
+  padding: 0;
   color: #874356;
   background-color: #F6E7D8;
   font-family: "Roboto", sans-serif;
@@ -243,14 +244,14 @@ body main .new-blog {
   flex-direction: row;
   background-color: white;
   max-width: 100%;
-  min-height: auto;
+  max-height: auto;
   justify-content: center;
   align-items: center;
 }
 body main .new-blog img {
   max-width: 50%;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 body main .new-blog .new-blog-text {
   padding-left: 3rem;
@@ -307,7 +308,7 @@ body main .walking-route {
 body main .walking-route img {
   max-width: 100%;
   width: 40%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -399,6 +400,8 @@ body footer .footer_title_socials {
   }
   body main .new-blog img {
     max-width: 100%;
+    min-height: auto;
+    height: auto;
   }
   body main .new-blog .new-blog-text {
     text-align: center;
@@ -419,9 +422,6 @@ body footer .footer_title_socials {
   body main .new-blog .new-blog-text button {
     font-size: 1.5rem;
   }
-  body main .new-blog .new-blog-text button:hover {
-    display: none;
-  }
   body main .walking-route {
     flex-direction: column;
     flex-direction: column-reverse;
@@ -430,6 +430,7 @@ body footer .footer_title_socials {
   body main .walking-route img {
     max-width: 100%;
     width: 100%;
+    height: auto;
   }
   body main .walking-route .text-walking-route {
     padding-right: 0;
@@ -450,9 +451,6 @@ body footer .footer_title_socials {
   }
   body main .walking-route .text-walking-route button {
     font-size: 1.5rem;
-  }
-  body main .walking-route .text-walking-route button:hover {
-    display: none;
   }
   body footer {
     display: flex;
@@ -532,11 +530,12 @@ body main ul li a {
   text-decoration: none;
 }
 body main ul li a h2 {
+  font-family: "Playfair Display", serif;
   max-width: 100%;
   padding: 50px;
   text-align: center;
   justify-content: center;
-  font-size: 50px;
+  font-size: 5vw;
   color: white;
 }
 body main ul li a:hover h2 {

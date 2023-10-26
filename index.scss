@@ -302,19 +302,19 @@ body {
             max-width: 100%;
             min-height: auto;
             justify-content: center;
-            align-items: center;
 
             img {
-                max-width: 50%;
-                width: 100%;
+                max-width: 100%;
+                width: 50%;
                 height: auto;
                 
             }
 
             .new-blog-text {
-    
+                
                 padding-left: 3rem;
                 padding-right: 2rem;
+                padding-bottom: 2rem;
                 color: $darkred;
                 max-width: 80%;
                 max-height: 100%;
@@ -375,7 +375,7 @@ body {
             img {
                 max-width: 100%;
                 width: 40%;
-                height: auto;
+                height: 100%;
                 object-fit: cover;
             }
 
@@ -507,9 +507,11 @@ body {
 
             .new-blog {
                 flex-direction: column;
+                align-items: center;
     
                 img {
                     max-width: 100%;
+                    width: 100%;
                     
                 }
     
@@ -549,6 +551,7 @@ body {
                 img {
                     max-width: 100%;
                     width: 100%;
+                    height: auto;
                 }
     
                 .text-walking-route {
@@ -576,9 +579,6 @@ body {
                         font-size: 1.5rem;
                     }
     
-                    button:hover {
-                        display: none;
-                    }
                 }
             }
         }
