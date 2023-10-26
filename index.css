@@ -1,16 +1,8 @@
 body main .more-about-blog {
-  margin-bottom: 100px;
   margin-top: 100px;
 }
 
-body main .more-about-blog .text-icons, body main .more-about-blog .image-icons {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 20px;
-}
-
-body main .more-about-blog .text-icons li, body main .more-about-blog .image-icons li {
+body main .more-about-blog .image-icons li {
   list-style: none;
   overflow: hidden;
   border-radius: 1px;
@@ -101,7 +93,7 @@ body main .container ul {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: space-around;
   padding-top: 20px;
 }
@@ -125,28 +117,39 @@ body main .container ul li img:hover {
   opacity: 0.5;
   transform: scale(1.05);
 }
+body main .more-about-blog {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
 body main .more-about-blog .image-icons {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
+  align-items: center;
+  max-width: 20vw;
+  min-height: auto;
 }
-body main .more-about-blog .image-icons li {
-  width: 200px;
-  height: 200px;
-}
-body main .more-about-blog .image-icons li img {
-  max-width: 100%;
-  min-height: 100%;
+body main .more-about-blog .image-icons img {
+  display: block;
+  margin: 0 auto;
+  max-width: 60%;
+  min-height: 60%;
+  width: auto;
+  height: auto;
   transition: transform ease 0.5s;
 }
-body main .more-about-blog .text-icons {
-  margin: 0;
+body main .more-about-blog .image-icons .text-icons {
+  margin-top: 10;
+  text-align: center;
   padding: 0;
   margin-left: 50px;
   margin-right: 50px;
 }
-body main .more-about-blog .text-icons li h2 {
-  font-size: 3rem;
-  text-align: center;
+body main .more-about-blog .image-icons .text-icons h2 {
+  font-size: 1.7rem;
 }
 body main .new-blog {
   display: flex;
@@ -271,4 +274,23 @@ body footer .footer_list_socials li img {
 body footer .footer_title_socials {
   font-size: 30px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  body main .container {
+    display: none;
+  }
+  body main .more-about-blog {
+    flex-direction: column;
+  }
+  body main .more-about-blog .image-icons {
+    margin: 0;
+    padding: 10px;
+    align-items: center;
+    max-width: 50vw;
+    min-height: auto;
+  }
+  body main .more-about-blog .image-icons .text-icons h2 {
+    font-size: 1.1rem;
+  }
 }/*# sourceMappingURL=index.css.map */
