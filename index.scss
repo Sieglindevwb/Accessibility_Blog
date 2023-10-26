@@ -398,43 +398,9 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) and (min-width: 480px) {
-    body {
 
 
-        main {
-            .container {
-                display: none;
-                    
-            }
-            
-            .more-about-blog {
-                flex-direction: row;
-               .image-icons {
-                   margin: 0;
-                   padding: 10px;
-                   align-items: center;
-                   max-width: 50vw;
-                   min-height: auto;
-   
-                   li {
-                       @extend %li-shared;
-                   }
-                   .text-icons {
-
-                        h2 {
-                               font-size: 1.1rem;
-                           }
-                   }   
-               }   
-            }
-
-        }
-    }
-}
-
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 768px) {
     body {
         main {
             .container {
@@ -540,6 +506,65 @@ body {
                     }
                 }
             }
+        }
+
+        footer {
+            display: flex; 
+            flex-direction: column;
+            justify-content: center;
+            
+            padding: 0px;
+            background: $darkred;
+            color: $whitecolor;
+    
+            .footer_title {
+                font-size: 30px;
+                text-align: center;
+            }
+    
+            .footer_list {
+                    list-style: none;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 20px;
+                    text-align: center;
+                    justify-content: center;
+                    margin: auto;
+                    
+                    
+                    li {
+                        padding-bottom: 5px;
+    
+                        a {
+                            text-decoration: none;
+                            color: $whitecolor;
+                        }
+                    }
+            }
+    
+            .footer_list_socials {
+                @extend %footer_list_shared;
+                display: flex;
+                justify-content: center;
+    
+                li {
+                    padding: 20px;
+                    flex-direction: row;
+    
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+    
+            .footer_title_socials {
+                font-size: 30px;
+                text-align: center;
+            }
+    
+    
+    
         }
     }
 
