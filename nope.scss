@@ -25,6 +25,7 @@ body {
         a {
             text-decoration: none;
             
+            
             p{
                 font-family: $bodyfont;
                 text-align: center;
@@ -38,6 +39,7 @@ body {
             p {
                 background-color: $whitecolor;
                 color: $darkred;
+                border-radius: 20px;
             }
         }
     }

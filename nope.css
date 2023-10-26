@@ -29,4 +29,5 @@ body header a p {
 body header a:hover p {
   background-color: white;
   color: #874356;
+  border-radius: 20px;
 }/*# sourceMappingURL=nope.css.map */
