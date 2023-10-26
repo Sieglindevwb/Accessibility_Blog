@@ -34,15 +34,29 @@ body {
                     vertical-align: bottom;
                 }
 
-                h2 {
-                    max-width: 100%;
-                    padding: 50px;
-                    text-align: center;
-                    justify-content: center;
-                    font-size: 50px;
-                    color: index.$whitecolor;
+                a {
+                    text-decoration: none;
+                    h2 {
+                        max-width: 100%;
+                        padding: 50px;
+                        text-align: center;
+                        justify-content: center;
+                        font-size: 50px;
+                        color: index.$whitecolor;
+                    }
                 }
+
+                a:hover {
+                    h2{
+                    color: index.$darkred;
+                    }   
+                }
+
             } 
+
+            li:hover {
+                background-color: index.$whitecolor;
+            }
 
             li:last-child {
                 flex-grow: 10;

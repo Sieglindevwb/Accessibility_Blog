@@ -118,11 +118,6 @@ body main .container ul li img {
   vertical-align: bottom;
   transition: transform ease 0.5s;
 }
-body main .container ul li img:hover {
-  background-color: #F6E7D8;
-  opacity: 0.5;
-  transform: scale(1.05);
-}
 body main .more-about-blog {
   display: flex;
   flex-direction: row;
@@ -240,8 +235,15 @@ body main .walking-route .text-walking-route p {
   font-size: 1.5rem;
   line-height: 1.5em;
 }
+body main .walking-route .text-walking-route button a {
+  text-decoration: none;
+  color: white;
+}
 body main .walking-route .text-walking-route button:hover {
   background-color: #F6E7D8;
+}
+body main .walking-route .text-walking-route button:hover a {
+  color: #874356;
 }
 body footer {
   display: flex;

@@ -239,12 +239,6 @@ body {
                         object-fit: cover;
                         vertical-align: bottom;
                         transition: transform ease .5s;
-                        }
-                    
-                    img:hover {
-                        background-color: $backgroundcolor;
-                        opacity: 0.50;
-                        transform: scale(1.05); 
                     }
                    
 
@@ -399,11 +393,18 @@ body {
 
                 button {
                     @extend %button-shared;
+                    a {
+                        text-decoration: none;
+                        color: $whitecolor;
+                    }
                 }
 
                 button:hover {
                     @extend %button-hover-shared;
                     background-color: $backgroundcolor;
+                    a {
+                        color: $darkred;
+                    }
                 }
             }
         }
